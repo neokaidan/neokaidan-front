@@ -1,0 +1,9 @@
+{
+  "sourceType": "unambiguous",
+  "presets": ["@babel/react", "@babel/env", "@babel/preset-typescript"],
+  "plugins": [
+    "@babel/plugin-proposal-class-properties",
+    "@babel/plugin-proposal-private-methods",
+    "@babel/plugin-transform-runtime"
+  ]
+}
