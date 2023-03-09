@@ -11,8 +11,7 @@
     "build-dev": "webpack --mode=development",
     "prettier": "prettier --config .prettierrc --write {public,src}/**/*.{tsx,ts,jsx,js,html,scss}",
     "lint": "eslint --ext .tsx --ext .ts --ext .jsx --ext .js src/",
-    "lint:fix": "eslint --ext .tsx --ext .ts --ext .jsx --ext .js src/ --fix",
-    "prepare": "git config --unset core.hookspath"
+    "lint:fix": "eslint --ext .tsx --ext .ts --ext .jsx --ext .js src/ --fix"
   },
   "devDependencies": {
     "@babel/core": "^7.21.0",
