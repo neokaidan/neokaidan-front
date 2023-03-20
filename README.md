@@ -47,7 +47,6 @@
   - `html-webpack-plugin` — плагин для работы с HTML файлами: встраивание \<script\> тэгов, favicon и пр.
   - `mini-css-extract-plugin` — минификация CSS в одну строку для сокращения веса css файлов
   - `sass-loader` — плагин для запуска препроцессора `sass` в `webpack`
-  - `ts-loader` — плагин для запуска комилятора `typescript` в `webpack`
   - `url-loader` — позволяет импортировать медиа файлы (png, svg, др.) в JS коде
   - `webpack-cli` — CLI интерфейс работы с webpack
   - `webpack-dev-server` — утилита для запуска локального сервера с hot-reload для разработки и отладки
