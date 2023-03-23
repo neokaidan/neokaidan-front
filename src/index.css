@@ -1,3 +1,11 @@
+@import url(./vendor/normalize.css);
+@import url(./vendor/fonts/fonts.css);
+
+@import url(./App/App.scss);
+@import url(./components/Header/Header.scss);
+@import url(./components/Footer/Footer.scss);
+@import url(./containers/Main/Main.css);
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -11,3 +19,5 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+
