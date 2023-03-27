@@ -4,7 +4,8 @@
     "baseUrl": ".",
     "paths": {
         "@static/*": ["public/*"],
-        "@components/*": ["components/*"]
+        "@components/*": ["src/components/*"],
+        "@containers/*": ["src/containers/*"]
     },
 
     "module": "ESNext",
@@ -18,6 +19,6 @@
     "allowSyntheticDefaultImports": true
   },
   "include": [
-    "src"
+    "src", "src/components", "src/containers", "src/custom.d.ts"
   ]
 }

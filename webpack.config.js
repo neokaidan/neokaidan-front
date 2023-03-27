@@ -54,8 +54,9 @@ module.exports = {
     resolve: {
         extensions: ['.js', '.jsx', '.ts', '.tsx'],
         alias: {
-            "@components": path.resolve(__dirname, "src/components"),
-            "@static": path.resolve(__dirname, "public"),
+            "@components": path.resolve(__dirname, "src/components/"),
+			"@containers": path.resolve(__dirname, "src/containers/"),
+            "@static": path.resolve(__dirname, "public/"),
         }
     },
     output: {
