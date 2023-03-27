@@ -1,6 +1,6 @@
 import React from "react";
-import touch from "../../images/touch.svg";
-import eye from "../../images/eyeBig.png";
+import touch from "@static/images/touch.svg";
+import eye from "@static/images/eyeBig.png";
 
 function Main() {
     return (

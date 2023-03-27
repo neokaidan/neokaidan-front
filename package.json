@@ -73,8 +73,7 @@
   "lint-staged": {
     "{public,src}/**/*.{tsx,ts,jsx,js,html,scss}": [
       "npm run prettier",
-      "npm run lint",
-      "git add"
+      "npm run lint"
     ]
   }
 }

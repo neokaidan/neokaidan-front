@@ -1,5 +1,6 @@
 import React, { Fragment } from "react";
 import { NavLink } from "react-router-dom";
+import "./Header.scss";
 
 const authorized = false;
 function Header() {

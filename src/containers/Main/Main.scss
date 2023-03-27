@@ -1,0 +1,78 @@
+.main {
+    display: flex;
+    flex-direction: column;
+
+    &__img {
+        align-self: center;
+        height: 375px;
+        width: 375px;
+    }
+    &__text {
+        display: grid;
+        grid-template-areas:
+            "A A A A   B B B B  B B B B"
+            "S S S S  C C C C  D D D D";
+        margin: 48px 0 7px 0px;
+    }
+
+    &__title {
+        font-weight: 400;
+        font-size: 70px;
+        line-height: 165px;
+        color: #ffffff;
+        margin: 0 0 0 37px;
+        grid-area: B;
+    }
+
+    &__subtitle {
+        font-weight: 500;
+        font-size: 14.5px;
+        line-height: 22px;
+        color: #ffffff;
+        grid-area: A;
+        margin: 0;
+        justify-content: center;
+        display: flex;
+        flex-direction: column;
+        text-align: right;
+    }
+
+    &__subtitle-plus {
+        font-weight: 400;
+        font-size: 25.7px;
+        line-height: 55px;
+        color: #ca1500;
+        grid-area: S;
+    }
+
+    &__button {
+        font-weight: 400;
+        font-size: 27px;
+        line-height: 44px;
+        border: none;
+        background: linear-gradient(180deg, #d21700 0%, #440000 100%);
+        box-shadow: 0px -5.505338191986084px 0px 0px rgba(0, 0, 0, 0.25) inset;
+        grid-area: C;
+        margin: 0;
+        border-radius: 8.65px;
+        color: #ffffff;
+        padding: 19px 86px 21px 30px;
+        grid-column: 7;
+        display: flex;
+        align-items: center;
+        cursor: pointer;
+    }
+
+    &__welcome {
+        font-weight: 500;
+        font-size: 14.5px;
+        line-height: 22px;
+        color: #ffffff;
+        grid-area: D;
+        margin: 0;
+        align-self: center;
+    }
+    &_touch {
+        padding: 0 32px 0 0;
+    }
+}
