@@ -1,0 +1,59 @@
+.articles {
+    padding: 30px 0px 56px;
+
+    @media screen and (min-width: 1920px) {
+        padding-top: 37px;
+    }
+}
+
+.articles__container {
+    width: 100%;
+    max-width: 390px;
+
+    margin: 0 auto;
+    padding: 0 20px;
+
+    @media screen and (min-width: 1920px) {
+        max-width: 1920px;
+        padding: 0 392px;
+    }
+}
+
+.articles__title {
+    margin: 0 0 22px;
+
+    font-family: "Lifehack Sans";
+    font-weight: 400;
+    font-size: 120px;
+    line-height: 1.2;
+
+    text-align: center;
+
+    color: #ffffff;
+
+    @media screen and (min-width: 1920px) {
+        font-size: 115px;
+        margin-bottom: 0;
+    }
+}
+
+.articles__bon-appetit {
+    margin: 0 0 70px;
+
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+
+    text-align: center;
+
+    color: #ffffff;
+
+    @media screen and (min-width: 1920px) {
+        max-width: 484px;
+        margin: 0 auto 97px;
+
+        font-size: 23px;
+    }
+}

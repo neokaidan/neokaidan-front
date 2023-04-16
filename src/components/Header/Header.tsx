@@ -12,7 +12,7 @@ function Header() {
                         НЕОКАЙДАН
                     </NavLink>
                     <div className="navigation__menu">
-                        <NavLink to="#" className="navigation__link">
+                        <NavLink to="articles" className="navigation__link">
                             Статьи
                         </NavLink>
                         <NavLink to="#" className="navigation__link">

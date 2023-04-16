@@ -1,20 +1,21 @@
 import React from "react";
+import { Routes, Route } from "react-router-dom";
+
 import Main from "@containers/Main/Main";
+import SharedLayout from "@containers/SharedLayout/SharedLayout";
+import Articles from "@containers/Articles/Articles";
+
 import "./App.scss";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
-import Footer from "@components/Footer/Footer";
-import Header from "@components/Header/Header";
 
 function App() {
     return (
         <div className="app">
-            <BrowserRouter>
-                <Header />
-                <Routes>
-                    <Route path="/" element={<Main />} />
-                </Routes>
-                <Footer />
-            </BrowserRouter>
+            <Routes>
+                <Route path="/" element={<SharedLayout />}>
+                    <Route index element={<Main />} />
+                    <Route path="articles" element={<Articles />} />
+                </Route>
+            </Routes>
         </div>
     );
 }

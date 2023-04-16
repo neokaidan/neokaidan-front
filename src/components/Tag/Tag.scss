@@ -1,0 +1,96 @@
+:root {
+    --gray-gradient: linear-gradient(
+        150deg,
+        rgba(106, 106, 106, 1) 30%,
+        rgba(255, 255, 255, 1) 99%
+    );
+    --orange-gradient: linear-gradient(150deg, rgba(255, 92, 0, 1) 30%, rgba(255, 255, 255, 1) 99%);
+    --purple-gradient: linear-gradient(
+        150deg,
+        rgba(143, 0, 255, 1) 30%,
+        rgba(255, 255, 255, 1) 99%
+    );
+    --blue-gradient: linear-gradient(150deg, rgba(0, 133, 255, 1) 30%, rgba(255, 255, 255, 1) 99%);
+    --red-gradient: linear-gradient(150deg, rgba(166, 5, 5, 1) 30%, rgba(255, 255, 255, 1) 99%);
+    --black-gradient: linear-gradient(150deg, rgba(97, 97, 97, 1) 30%, rgba(255, 255, 255, 1) 99%);
+
+    --gray-bg: rgb(73, 73, 73);
+    --orange-bg: rgb(75, 29, 19);
+    --purple-bg: rgb(42, 17, 73);
+    --blue-bg: rgb(17, 43, 73);
+    --red-bg: rgb(67, 11, 11);
+    --black-bg: rgb(37, 37, 37);
+
+    --desktop: 1920px;
+}
+
+.tags__item {
+    padding: 1px 1px;
+
+    border-radius: 14px;
+
+    background-image: var(--gray-gradient);
+
+    .tags__link {
+        background-color: var(--gray-bg);
+    }
+
+    &--orange {
+        background-image: var(--orange-gradient);
+
+        .tags__link {
+            background-color: var(--orange-bg);
+        }
+    }
+
+    &--purple {
+        background-image: var(--purple-gradient);
+
+        .tags__link {
+            background-color: var(--purple-bg);
+        }
+    }
+
+    &--blue {
+        background-image: var(--blue-gradient);
+
+        .tags__link {
+            background-color: var(--blue-bg);
+        }
+    }
+
+    &--red {
+        background-image: var(--red-gradient);
+
+        .tags__link {
+            background-color: var(--red-bg);
+        }
+    }
+
+    &--black {
+        background-image: var(--black-gradient);
+
+        .tags__link {
+            background-color: var(--black-bg);
+        }
+    }
+}
+
+.tags__link {
+    padding: 7px 15px;
+
+    display: block;
+    height: 100%;
+
+    border-radius: 14px;
+
+    font-family: "Mustica Pro";
+    font-weight: 600;
+    font-size: 5px;
+    line-height: 1.2;
+    letter-spacing: 0.205em;
+    text-transform: uppercase;
+    text-decoration: none;
+
+    color: #afafaf;
+}

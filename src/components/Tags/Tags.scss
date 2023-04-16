@@ -1,0 +1,14 @@
+.tags {
+    padding: 0;
+    margin: 0 0 18px;
+    list-style: none;
+
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 14px;
+    column-gap: 18px;
+
+    @media screen and (min-width: 1920px) {
+        margin-bottom: 8px;
+    }
+}

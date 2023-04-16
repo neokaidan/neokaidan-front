@@ -1,0 +1,25 @@
+.cards {
+    padding: 0;
+    margin: 0 0 52px;
+    list-style: none;
+
+    @media screen and (min-width: 1920px) {
+        margin-bottom: 150px;
+    }
+}
+
+.masonry {
+    display: flex;
+    margin-left: -20px; /* gutter size offset */
+    width: auto;
+}
+.masonry__column {
+    padding-left: 20px; /* gutter size */
+    background-clip: padding-box;
+
+    // > .cards__item {
+    //     /* change div to reference your elements you put in <Masonry> */
+    //     // background: grey;
+    //     margin-bottom: 13px;
+    // }
+}

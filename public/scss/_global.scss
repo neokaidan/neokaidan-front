@@ -11,7 +11,7 @@ $colors: (
     "gray3": #dbdbe5,
     "gray2": #f0f0f5,
     "gray1": #f9f9fb,
-    clear "red10": #610316,
+    "red10": #610316,
     "red9": #8a041a,
     "red8": #ab091e,
     "red7": #cf1124,
@@ -39,6 +39,15 @@ $colors: (
 @font-face {
     font-family: "Lifehack Sans";
     src: url("../fonts/LifehackSans/LifehackSans-Regular.ttf");
+    font-weight: 400;
+    font-style: normal;
+    font-stretch: normal;
+    font-variant: normal;
+}
+
+@font-face {
+    font-family: "Comforter";
+    src: url("../fonts/Comforter/Comforter-Regular.ttf");
     font-weight: 400;
     font-style: normal;
     font-stretch: normal;
@@ -88,7 +97,7 @@ $montserrat_weights: (
     @font-face {
         font-family: Montserrat;
         src: url("../fonts/Montserrat/static/Montserrat-#{$key}.ttf");
-        font-weight: 100;
+        font-weight: $value;
         font-style: normal;
         font-stretch: normal;
         font-variant: normal;
@@ -97,7 +106,7 @@ $montserrat_weights: (
     @font-face {
         font-family: Montserrat;
         src: url("../fonts/Montserrat/static/Montserrat-#{$key}Italic.ttf");
-        font-weight: 100;
+        font-weight: $value;
         font-style: italic;
         font-stretch: normal;
         font-variant: normal;
