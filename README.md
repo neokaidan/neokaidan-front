@@ -56,6 +56,7 @@
   - `react-dom` — работа с Virtual DOM
   - `react-redux` — поддержка Redux
 - `redux` — библиотека Redux
+- `react-masonry-css` — React-компонент для построения masonry-сетки
 
 > В случае, если `husky` не запускает свои скрипты при выполнении команды `git commit`, необходимо выполнить:\
 > `git config --unset core.hookspath`
