@@ -1,0 +1,60 @@
+.end-articles-notify {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    &__pre-eye {
+        margin: 0;
+        width: 274px;
+
+        font-family: "Lifehack Sans";
+
+        font-size: 36px;
+        line-height: 1.22;
+
+        text-align: center;
+
+        color: var(--white);
+
+        @media screen and (min-width: 1920px) {
+            margin-bottom: 76px;
+        }
+    }
+
+    &__eye {
+        display: block;
+
+        max-width: 100%;
+        height: auto;
+
+        @media screen and (min-width: 1920px) {
+            order: 2;
+
+            width: 600px;
+        }
+    }
+
+    &__after-eye {
+        //display: flex;
+
+        margin: 0;
+
+        font-family: "Montserrat";
+        font-weight: 500;
+        font-size: 13px;
+        line-height: 1.5;
+
+        color: var(--white);
+
+        @media screen and (min-width: 1280px) {
+            font-family: "Comforter";
+
+            font-size: 36px;
+            line-height: 1.5;
+
+            text-align: center;
+
+            color: var(--red);
+        }
+    }
+}

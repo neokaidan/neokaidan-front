@@ -6,6 +6,20 @@
     @media screen and (min-width: 1920px) {
         margin-bottom: 150px;
     }
+
+    &__item {
+        &:not(:last-child) {
+            margin-bottom: 30px;
+        }
+
+        @media screen and (min-width: 1920px) {
+            margin-bottom: 13px;
+
+            &:not(:last-child) {
+                margin-bottom: 13px;
+            }
+        }
+    }
 }
 
 .masonry {

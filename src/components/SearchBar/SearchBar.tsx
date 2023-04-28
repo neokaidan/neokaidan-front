@@ -1,5 +1,5 @@
 import React from "react";
-import "./Search.scss";
+import "./SearchBar.scss";
 
 function Search() {
     return (

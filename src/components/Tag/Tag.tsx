@@ -3,14 +3,14 @@ import "./Tag.scss";
 import { Tag as ITag } from "src/types/Tag";
 
 function Tag({ tag, color }: ITag) {
-    const colorClass = color ? `tags__item--${color}` : "";
+    const colorClass = color ? `tag_${color}` : "";
 
     return (
-        <li className={`tags__item ${colorClass}`}>
-            <a href="#" className="tags__link">
+        <div className={`tag ${colorClass}`}>
+            <a href="#" className="tag__link">
                 #{tag}
             </a>
-        </li>
+        </div>
     );
 }
 

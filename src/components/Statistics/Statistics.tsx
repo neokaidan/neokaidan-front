@@ -1,10 +1,10 @@
 import React from "react";
 import "./Statistics.scss";
 
-interface StatisticsProps {
+type StatisticsProps = {
     likes: number;
     watching: number;
-}
+};
 
 function Statistics({ likes, watching }: StatisticsProps) {
     return (

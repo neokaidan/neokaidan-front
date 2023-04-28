@@ -1,6 +1,6 @@
 import { Tag } from "./Tag";
 
-export interface Article {
+export type Article = {
     id: number;
     image: string;
     likes: number;
@@ -8,4 +8,4 @@ export interface Article {
     tags: Tag[];
     title: string;
     text: string;
-}
+};

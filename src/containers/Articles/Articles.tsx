@@ -1,8 +1,8 @@
 import React from "react";
 import "./Articles.scss";
-import Cards from "@components/Cards/Cards";
-import Search from "@components/Search/Search";
-import ArticlesEnd from "@components/ArticlesEnd/ArticlesEnd";
+import ArticlesGrid from "@components/ArticlesGrid/ArticlesGrid";
+import SearchArticles from "@components/SearchArticles/SearchArticles";
+import EndArticlesNotify from "@components/EndArticlesNotify/EndArticlesNotify";
 
 const articles = [
     {
@@ -173,15 +173,15 @@ function Articles() {
             <div className="articles__container">
                 <h1 className="articles__title">Статьи</h1>
 
-                <Search />
+                <SearchArticles />
 
                 <p className="articles__bon-appetit">
                     Приятного аппетита! Тому, кто всё прочитал: +1 миска гнили
                 </p>
 
-                <Cards cards={articles} />
+                <ArticlesGrid cards={articles} />
 
-                <ArticlesEnd />
+                <EndArticlesNotify />
             </div>
         </section>
     );

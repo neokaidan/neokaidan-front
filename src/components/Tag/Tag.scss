@@ -24,73 +24,71 @@
     --desktop: 1920px;
 }
 
-.tags__item {
+.tag {
     padding: 1px 1px;
 
     border-radius: 14px;
 
     background-image: var(--gray-gradient);
 
-    .tags__link {
-        background-color: var(--gray-bg);
-    }
-
-    &--orange {
+    &_orange {
         background-image: var(--orange-gradient);
 
-        .tags__link {
+        .tag__link {
             background-color: var(--orange-bg);
         }
     }
 
-    &--purple {
+    &_purple {
         background-image: var(--purple-gradient);
 
-        .tags__link {
+        .tag__link {
             background-color: var(--purple-bg);
         }
     }
 
-    &--blue {
+    &_blue {
         background-image: var(--blue-gradient);
 
-        .tags__link {
+        .tag__link {
             background-color: var(--blue-bg);
         }
     }
 
-    &--red {
+    &_red {
         background-image: var(--red-gradient);
 
-        .tags__link {
+        .tag__link {
             background-color: var(--red-bg);
         }
     }
 
-    &--black {
+    &_black {
         background-image: var(--black-gradient);
 
-        .tags__link {
+        .tag__link {
             background-color: var(--black-bg);
         }
     }
-}
 
-.tags__link {
-    padding: 7px 15px;
+    &__link {
+        padding: 7px 15px;
 
-    display: block;
-    height: 100%;
+        display: block;
+        height: 100%;
 
-    border-radius: 14px;
+        border-radius: 14px;
 
-    font-family: "Mustica Pro";
-    font-weight: 600;
-    font-size: 5px;
-    line-height: 1.2;
-    letter-spacing: 0.205em;
-    text-transform: uppercase;
-    text-decoration: none;
+        font-family: "Mustica Pro";
+        font-weight: 600;
+        font-size: 5px;
+        line-height: 1.2;
+        letter-spacing: 0.205em;
+        text-transform: uppercase;
+        text-decoration: none;
 
-    color: #afafaf;
+        color: #afafaf;
+
+        background-color: var(--gray-bg);
+    }
 }
