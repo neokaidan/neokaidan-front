@@ -19,7 +19,7 @@
         font-weight: 400;
         font-size: 70px;
         line-height: 165px;
-        color: #ffffff;
+        color: var(--white);
         margin: 0 0 0 37px;
         grid-area: B;
     }
@@ -28,7 +28,7 @@
         font-weight: 500;
         font-size: 14.5px;
         line-height: 22px;
-        color: #ffffff;
+        color: var(--white);
         grid-area: A;
         margin: 0;
         justify-content: center;
@@ -41,7 +41,7 @@
         font-weight: 400;
         font-size: 25.7px;
         line-height: 55px;
-        color: #ca1500;
+        color: var(--red);
         grid-area: S;
     }
 
@@ -55,7 +55,7 @@
         grid-area: C;
         margin: 0;
         border-radius: 8.65px;
-        color: #ffffff;
+        color: var(--white);
         padding: 19px 86px 21px 30px;
         grid-column: 7;
         display: flex;
@@ -67,7 +67,7 @@
         font-weight: 500;
         font-size: 14.5px;
         line-height: 22px;
-        color: #ffffff;
+        color: var(--white);
         grid-area: D;
         margin: 0;
         align-self: center;

@@ -1,26 +1,12 @@
 $colors: (
     "white": #ffffff,
 
-    "gray10": #111122,
-    "gray9": #202037,
-    "gray8": #2f2f46,
-    "gray7": #585874,
-    "gray6": #7a7a94,
-    "gray5": #9999ad,
-    "gray4": #b9b9cb,
-    "gray3": #dbdbe5,
-    "gray2": #f0f0f5,
-    "gray1": #f9f9fb,
-    clear "red10": #610316,
-    "red9": #8a041a,
-    "red8": #ab091e,
-    "red7": #cf1124,
-    "red6": #df202d,
-    "red5": #ef4e4e,
-    "red4": #f86a6a,
-    "red3": #ff9b9b,
-    "red2": #ffbdbd,
-    "red1": #ffe3e3,
+    "black": #111111,
+
+    "gray1": #676767,
+    "gray2": #1c1c1c,
+
+    "red": #ca1500,
 );
 
 @function hexToRgb($hex) {
@@ -39,6 +25,15 @@ $colors: (
 @font-face {
     font-family: "Lifehack Sans";
     src: url("../fonts/LifehackSans/LifehackSans-Regular.ttf");
+    font-weight: 400;
+    font-style: normal;
+    font-stretch: normal;
+    font-variant: normal;
+}
+
+@font-face {
+    font-family: "Comforter";
+    src: url("../fonts/Comforter/Comforter-Regular.ttf");
     font-weight: 400;
     font-style: normal;
     font-stretch: normal;
@@ -88,7 +83,7 @@ $montserrat_weights: (
     @font-face {
         font-family: Montserrat;
         src: url("../fonts/Montserrat/static/Montserrat-#{$key}.ttf");
-        font-weight: 100;
+        font-weight: $value;
         font-style: normal;
         font-stretch: normal;
         font-variant: normal;
@@ -97,7 +92,7 @@ $montserrat_weights: (
     @font-face {
         font-family: Montserrat;
         src: url("../fonts/Montserrat/static/Montserrat-#{$key}Italic.ttf");
-        font-weight: 100;
+        font-weight: $value;
         font-style: italic;
         font-stretch: normal;
         font-variant: normal;

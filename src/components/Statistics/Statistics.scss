@@ -1,0 +1,39 @@
+.statistics {
+    display: flex;
+    align-items: center;
+    column-gap: 6px;
+
+    position: absolute;
+    right: -1px;
+    bottom: -1px;
+    //z-index: 1;
+
+    padding: 7px 14px;
+    margin: 0;
+
+    font-family: "Montserrat";
+    font-weight: 500;
+    font-size: 9px;
+    line-height: 1.5;
+
+    color: var(--white);
+
+    list-style: none;
+
+    background-color: rgba(0, 0, 0, 0.78);
+    backdrop-filter: blur(1px);
+    /* Note: backdrop-filter has minimal browser support */
+
+    border-top-left-radius: 11px;
+
+    @media screen and (min-width: 1920px) {
+        padding: 14px 20px;
+    }
+
+    &__item {
+        position: relative;
+        display: flex;
+        align-items: center;
+        column-gap: 4px;
+    }
+}
