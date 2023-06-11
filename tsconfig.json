@@ -1,24 +1,24 @@
 {
-  "compilerOptions": {
-
-    "baseUrl": ".",
-    "paths": {
-        "@static/*": ["public/*"],
-        "@components/*": ["src/components/*"],
-        "@containers/*": ["src/containers/*"]
+    "compilerOptions": {
+        "baseUrl": ".",
+        "paths": {
+            "@static/*": ["public/*"],
+            "@components/*": ["src/components/*"], // components: [/basic, /modules, /layouts, /containers]
+            "@pages": ["src/pages"],
+            "@helpers/*": ["src/utils/helpers/*"],
+        },
+        "module": "ESNext",
+        "outDir": "./dist/",
+        "sourceMap": true,
+        "noImplicitAny": true,
+        "target": "es5",
+        "jsx": "react",
+        "allowJs": true,
+        "moduleResolution": "node",
+        "allowSyntheticDefaultImports": true
     },
-
-    "module": "ESNext",
-    "outDir": "./dist/",
-    "sourceMap": true,
-    "noImplicitAny": true,
-    "target": "es5",
-    "jsx": "react",
-    "allowJs": true,
-    "moduleResolution": "node",
-    "allowSyntheticDefaultImports": true
-  },
-  "include": [
-    "src", "src/components", "src/containers", "src/custom.d.ts"
-  ]
+    "include": ["src", "src/components", "src/containers", "src/custom.d.ts"],
+    "exclude": [
+        "node_modules"
+    ]
 }

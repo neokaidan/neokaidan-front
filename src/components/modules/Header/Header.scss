@@ -1,0 +1,29 @@
+.navigation {
+    display: flex;
+    justify-content: center;
+    font-family: "Buyan", Arial, sans-serif;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 48px;
+    margin-block: 40px;
+
+    & a {
+        color: rgba(236, 236, 236, 1);
+        text-decoration: none;
+
+        transition: 0.25s ease-out;
+
+        &:hover {
+            color: rgba(236, 236, 236, 0.8);
+        }
+    }
+
+    &__menu {
+        display: flex;
+        align-self: center;
+        gap: 35px;
+        font-size: 16px;
+        line-height: 26px;
+        margin: 0 50px;
+    }
+}

@@ -1,0 +1,51 @@
+.button {
+	display: flex;
+	position: relative;
+
+	padding: 16px 32px;
+
+	background: linear-gradient(180deg, #cd4f41 20%, #960f00 100%);
+	box-shadow: inset 0px -5.5125px 0px rgba(0, 0, 0, 0.25);
+	border-radius: 8.6625px;
+
+	border: none;
+
+	font-family: "Buyan";
+	font-style: normal;
+	font-weight: 400;
+	font-size: 27.2772px;
+	line-height: 160%;
+	letter-spacing: 0.1em;
+	color: rgba(255, 255, 255, 0.9);
+
+	cursor: pointer;
+
+	transition: 0.2s ease-out;
+
+	&__press {
+		display: block;
+		width: 22px;
+		height: 30px;
+		margin-left: 50px;
+		background-image: url("../../../../public/images/press_img.png");
+	}
+
+	&::after {
+		content: "";
+		position: absolute;
+		top: 0;
+		right: 77px;
+		display: block;
+		width: 2px;
+		height: 100%;
+		background: rgba(114, 13, 2, 1);
+	}
+
+	&:hover {
+		background: linear-gradient(180deg, #bd4a3d 20%, #7c0d00 100%);
+
+		&::after {
+			background: rgba(95, 11, 1, 1);
+		}
+	}
+}

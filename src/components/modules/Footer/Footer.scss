@@ -1,0 +1,134 @@
+.footer {
+    width: 100%;
+    margin-block: 150px 40px;
+
+    a {
+        font-family: "Buyan";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 160%;
+        letter-spacing: 0.1em;
+
+        transition: 0.2s ease-out;
+
+        &:hover {
+            color: rgba(236, 236, 236, 0.9);
+        }
+    }
+
+    &__nav {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 32px;
+
+        &_col {
+            display: flex;
+            flex-direction: column;
+
+            &_left {
+                align-items: flex-end;
+            }
+
+            &_right {
+                align-items: flex-start;
+            }
+
+            &_left,
+            &_right {
+                row-gap: 8px;
+            }
+        }
+
+        &_logo {
+            display: flex;
+            flex-direction: column;
+
+            align-items: center;
+            justify-content: center;
+
+            font-weight: 500;
+            line-height: 150%;
+
+            span {
+                font-size: 14px;
+                user-select: none;
+            }
+
+            a {
+                font-family: "Buyan", Arial, sans-serif;
+                font-weight: 400;
+                font-size: 50px;
+                line-height: 60px;
+            }
+        }
+    }
+}
+
+.socials {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: 10px;
+
+    margin-top: 120px;
+
+    a {
+        position: relative;
+        width: 45px;
+        height: 45px;
+
+        background: linear-gradient(148.76deg, #d9d9d9 0%, rgba(217, 217, 217, 0) 140.39%);
+        border-radius: 100%;
+
+        &::before {
+            content: "";
+            display: block;
+
+            position: relative;
+            top: 51%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+
+            background-color: white;
+            transition: 0.2s ease-out;
+        }
+    }
+
+    &_tg {
+        &::before {
+            width: 20px;
+            height: 16px;
+
+            mask-image: url("../../../../public/icons/tg_icon.svg");
+            -webkit-mask-image: url("../../../../public/icons/tg_icon.svg");
+        }
+    }
+
+    &_vk {
+        &::before {
+            width: 23px;
+            height: 14px;
+
+            mask-image: url("../../../../public/icons/vk_icon.svg");
+            -webkit-mask-image: url("../../../../public/icons/vk_icon.svg");
+        }
+    }
+
+    &_tg,
+    &_vk {
+        &:hover {
+            &::before {
+                background-color: rgba(255, 255, 255, 0.8);
+            }
+        }
+    }
+}
+
+.separator {
+    width: 73px;
+    height: 73px;
+
+    background-image: url("../../../../public/images/eye_footer_img.png");
+    background-size: contain;
+}

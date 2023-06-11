@@ -1,0 +1,107 @@
+.banner {
+	display: flex;
+	justify-content: center;
+	margin-bottom: 300px;
+
+	position: relative;
+
+	user-select: none;
+
+	&__content {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+
+	&__row {
+		display: flex;
+		align-items: center;
+		column-gap: 30px;
+
+		position: relative;
+
+		&_eyes {
+			max-height: 400px;
+			max-width: 700px;
+
+			img {
+				width: 100%;
+				height: 100%;
+			}
+		}
+
+		&_upper {
+			position: relative;
+			left: -150px;
+		}
+
+		&_lower {
+			position: relative;
+			right: -150px;
+		}
+	}
+
+	&__item {
+		text-align: right;
+
+		&_comforter {
+			font-family: "Comforter";
+			font-style: normal;
+			font-size: 30px;
+			font-weight: 400;
+			line-height: 150%;
+			color: #ca1500;
+		}
+
+		&_title {
+			font-family: "Lifehack Sans";
+			font-style: normal;
+			font-weight: 400;
+			font-size: 90px;
+			line-height: 150%;
+			text-transform: uppercase;
+
+			color: #ffffff;
+			text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+		}
+	}
+
+	// &::before {
+	// 	content: "";
+	// 	position: absolute;
+	// 	left: 0;
+	// 	display: block;
+	// 	width: 20%;
+	// 	height: 100%;
+
+	// 	background-image: url("../../../../../public/images/banner_left_img.png");
+	// 	background-size: cover;
+
+	// 	background-position: 100% 100%;
+	// }
+
+	// &::after {
+	// 	content: "";
+	// 	position: absolute;
+	// 	right: 0;
+	// 	bottom: 0;
+	// 	display: block;
+	// 	width: 20%;
+	// 	height: 70%;
+
+	// 	background-image: url("../../../../../public/images/banner_right_img.png");
+	// 	background-size: cover;
+
+	// 	background-position: 70% 100%;
+	// }
+}
+
+.separator__line {
+	position: absolute;
+	bottom: -150px;
+	height: 8px;
+	width: 100%;
+	background-color: white;
+
+	transform: rotate(-2deg);
+}

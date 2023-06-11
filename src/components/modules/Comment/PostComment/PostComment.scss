@@ -1,0 +1,61 @@
+.add_comment {
+    display: flex;
+    align-items: center;
+    position: relative;
+
+    &__input {
+        width: 100%;
+        padding: 15px;
+
+        background-color: transparent;
+        color: #858585;
+
+        border: 2px solid white;
+        border-radius: 10px;
+
+        outline: none;
+
+        padding-right: 52px;
+
+        &:focus ~ .add_comment__button {
+            svg {
+                path {
+                    fill: red;
+                }
+            }
+        }
+    }
+
+    &__button {
+        position: absolute;
+        right: 15px;
+
+        background-color: transparent;
+        border: none;
+
+        height: 22px;
+        padding: 0;
+        margin: 0;
+
+        cursor: pointer;
+
+        svg {
+            width: 22px;
+            height: 22px;
+
+            transition: 0.25s ease-out;
+        }
+    }
+
+    &::before {
+        content: "";
+        width: 70px;
+        height: 62px;
+        display: block;
+
+        background-color: #630a0a;
+
+        border-radius: 50%;
+        margin-right: 16px;
+    }
+}
