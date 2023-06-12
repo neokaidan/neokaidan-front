@@ -1,0 +1,74 @@
+.article_ratings {
+    display: flex;
+    align-items: center;
+    column-gap: 26px;
+
+    user-select: none;
+
+    font-size: 14px;
+
+    &__button {
+        padding: 36px;
+        border-radius: 50%;
+        position: relative;
+        cursor: pointer;
+
+        background-color: transparent;
+        border: none;
+
+        transition: 0.25s ease-out;
+
+        svg {
+            width: 30px;
+            height: 30px;
+
+            position: absolute;
+            top: 50%;
+            left: 50%;
+
+            transform: translate(-50%, -60%);
+
+            transition: 0.25s ease-out;
+        }
+
+        &:hover {
+            background-color: white;
+
+            svg {
+                path {
+                    fill: black;
+                }
+            }
+        }
+    }
+
+    &__views,
+    &__likes {
+        display: flex;
+        align-items: center;
+
+        &::before {
+            content: "";
+            width: 17px;
+            height: 17px;
+            display: inline-block;
+
+            margin-right: 8px;
+
+            background-size: contain;
+            background-repeat: no-repeat;
+        }
+    }
+
+    &__views {
+        &::before {
+            background-image: url("../../../../../public/images/eye_icon.svg");
+        }
+    }
+
+    &__likes {
+        &::before {
+            background-image: url("../../../../../public/images/like_icon__light.svg");
+        }
+    }
+}

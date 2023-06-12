@@ -1,0 +1,48 @@
+.ratings {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	row-gap: 60px;
+
+	margin-block: 60px;
+
+	user-select: none;
+
+	&__helmet {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+
+		&_title {
+			font-family: "Lifehack Sans";
+			font-style: normal;
+			font-weight: 400;
+			font-size: 90px;
+			line-height: 100%;
+			text-transform: uppercase;
+
+			color: #ffffff;
+			text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+		}
+	}
+
+	&__items {
+		display: flex;
+		flex-direction: column;
+		row-gap: 14px;
+
+		max-width: 420px;
+		width: 100%;
+
+		li {
+			width: 100%;
+		}
+	}
+
+	&__about {
+		display: flex;
+		align-items: center;
+		column-gap: 40px;
+	}
+}

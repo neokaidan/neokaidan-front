@@ -1,0 +1,57 @@
+.user_card {
+	display: flex;
+	align-items: center;
+	column-gap: 16px;
+
+	width: 100%;
+
+	padding: 8px;
+
+	background: linear-gradient(145deg, rgb(50, 50, 50) -22.56%, rgb(26, 26, 26) 103.28%) padding-box,
+		linear-gradient(90deg, rgb(115, 115, 115), rgb(87, 87, 87, 0)) border-box;
+	border: 1px solid transparent;
+	border-radius: 5.5422px;
+
+	&__position {
+		width: 34px;
+		height: 34px;
+
+		display: flex;
+		align-items: center;
+		justify-content: center;
+
+		background: linear-gradient(161.95deg, rgb(97, 97, 94) -22.56%, rgb(48, 48, 48) 103.28%) padding-box,
+			linear-gradient(180deg, rgb(179, 179, 179), rgb(87, 87, 87, 0)) border-box;
+		border: 1px solid transparent;
+		border-radius: 5.5422px;
+
+		box-shadow: 0px 1.10844px 0px 0.55422px rgba(0, 0, 0, 0.25);
+	}
+
+	&__cards {
+		position: relative;
+		margin-left: auto;
+
+		padding: 8px;
+		background: linear-gradient(163.86deg, rgba(8, 11, 21, 0.7) -1.75%, rgba(49, 49, 52, 0) 179.02%);
+		border-radius: 6px;
+
+		width: 53px;
+		text-align: right;
+
+		&::before {
+			content: "";
+			display: block;
+			position: absolute;
+			left: -24px;
+			top: 0px;
+
+			width: 26px;
+			height: 32px;
+
+			background-image: url("../../../../../public/icons/cards_icon.svg");
+
+			scale: 1.3;
+		}
+	}
+}

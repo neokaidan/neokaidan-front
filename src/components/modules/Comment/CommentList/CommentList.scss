@@ -1,0 +1,12 @@
+.comment_list {
+    max-width: 800px;
+    width: 100%;
+
+    &__items {
+        display: flex;
+        flex-direction: column;
+        row-gap: 24px;
+
+        margin-top: 40px;
+    }
+}

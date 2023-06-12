@@ -37,9 +37,12 @@ module.exports = {
 				],
 			},
 			{
-				test: /\.(png|jpe?g|gif|svg|eot|ttf|woff|woff2)$/,
+				test: /\.(woff|woff2|eot|ttf|otf)$/i,
 				type: "asset/resource",
-				dependency: { not: ["url"] },
+			},
+			{
+				test: /\.(png|svg|jpg|jpeg|gif)$/i,
+				type: "asset/resource",
 			},
 		],
 	},
@@ -47,6 +50,7 @@ module.exports = {
 		new HtmlWebpackPlugin({
 			template: "public/index.html",
 			favicon: "public/favicon.ico",
+			inject: true,
 		}),
 		new MiniCssExtractPlugin(),
 		new EsLintPlugin({
@@ -57,13 +61,14 @@ module.exports = {
 		extensions: [".js", ".jsx", ".ts", ".tsx"],
 		alias: {
 			"@components": path.resolve(__dirname, "src/components/"),
-			"@containers": path.resolve(__dirname, "src/containers/"),
+			"@pages": path.resolve(__dirname, "src/pages/"),
 			"@static": path.resolve(__dirname, "public/"),
+			"@helpers": path.resolve(__dirname, "src/utils/helpers/"),
 		},
 	},
 	output: {
 		path: path.resolve(__dirname, "dist"),
 		filename: "bundle.js",
-		publicPath: "",
+		publicPath: "/",
 	},
 };
